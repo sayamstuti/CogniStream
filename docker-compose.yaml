@@ -41,3 +41,18 @@ services:
   airflow-scheduler:
     <<: *airflow-common
     command: scheduler
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.8
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+    environment:
+      CLICKHOUSE_USER: cognistream
+      CLICKHOUSE_PASSWORD: cognistream
+      CLICKHOUSE_DB: cognistream
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+
+volumes:
+  clickhouse_data:
