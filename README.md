@@ -1,68 +1,43 @@
-# CogniStream — Developer Flow-State & Cognitive Load Analytics
+# CogniStream — Ingestion & Orchestration
 
-Engineering productivity is usually measured with shallow metrics like
-"lines of code" or "tickets closed" — these measure *output*, not the
-*friction* that blocks deep, focused work. CogniStream analyzes developer
-activity logs (GitHub, Slack, Jira, IDE) to surface a "Context-Switching
-Tax": how much flow-state time is lost to interruptions like poorly-timed
-CI/CD Slack alerts — giving engineering managers something actionable
-instead of vanity metrics.
+### My Contributions  — Ingestion & Orchestration Track
 
-## Tech Stack
+My contribution focuses on **mock data generation and Airflow-based orchestration**.
 
-| Layer | Tool |
-|---|---|
-| Orchestration | Apache Airflow |
-| OLAP Database | ClickHouse |
-| Data Processing | Python + Polars |
-| Backend API | FastAPI |
-| Frontend | React + Tremor.js |
-| Infra | Docker Compose |
+## 📌 Responsibilities
 
-## Architecture
-Mock APIs (GitHub/Slack/Jira/VSCode)
-↓
-Airflow (daily schedule)
-↓
-ClickHouse (event storage)
-↓
-Polars (flow-state detection logic)
-↓
-FastAPI (serves aggregated metrics)
-↓
-React + Tremor.js (dashboard)
+- Generate mock **GitHub, Slack, Jira & VSCode** activity data using Python
+- Generate data for a **5-day work week**
+- Set up **Apache Airflow**
+- Create DAGs for scheduled data generation
+- Verify successful manual and scheduled DAG runs
 
-## Project Structure
+## 🛠️ Tech Stack
 
+- Python
+- Apache Airflow
+- PostgreSQL
+- Docker Compose
+- JSON
+
+## 📁 Project Structure
+
+```text
 CogniStream/
+│
 ├── dags/
-│ └── mock_data_pipeline.py # Airflow DAG -- schedules daily data generation
+│   └── mock_data_pipeline.py
+│
 ├── data_ingestion/
-│ └── generate_mock_data.py # Generates fake GitHub/Slack/Jira/VSCode events
-├── docker-compose.yaml # Spins up Airflow + Postgres (+ ClickHouse)
+│   └── generate_mock_data.py
+│
+├── docs/
+│   └── screenshots/
+│       └── airflow_success.jpg
+│
+├── docker-compose.yaml
 ├── requirements.txt
 └── README.md
-
-## How to Run This Project
-
-**Prerequisites:** Docker Desktop installed and running.
-
-```bash
-# 1. Start the one-time Airflow database/user setup
-docker-compose up airflow-init
-
-# 2. Start all services in the background
-docker-compose up -d
-
-# 3. Confirm containers are running
-docker ps
-```
-
-Open the Airflow dashboard at **http://localhost:8080**
-(Username: `admin` / Password: `admin`)
-
-You'll see the `cognistream_data_ingestion` DAG. Toggle it on and trigger a
-run manually, or let it run automatically on its daily schedule.
 
 ## Progress Log
 
@@ -77,15 +52,10 @@ run manually, or let it run automatically on its daily schedule.
   scheduler). Verified the DAG runs successfully -- confirmed both a
   manual trigger and an automatic scheduled run completed with
   `Total success: 2`.
-  ![Airflow DAG success](docs/screenshots/airflow_success.jpg)
+
+![Airflow DAG success](docs/screenshots/airflow-success.jpg)
 
 ## Mid-Review Deliverable
 
 Orchestration Audit -- Airflow DAG runs successfully, confirmed via the
 Airflow UI (Grid view shows successful runs for `generate_mock_events`).
-
-## Next Steps
-
-- Deploy ClickHouse and design the event-table schema
-- Load generated JSON data into ClickHouse using Polars
-- Build the core "Flow-State Detection" algorithm
