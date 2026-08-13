@@ -1,0 +1,105 @@
+[2026-08-13T06:02:11.197+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:02:11.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:02:11.236+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:02:11.234+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:02:11.370+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:02:11.544+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:02:11.543+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:02:11.693+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:02:11.692+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-12 00:00:00+00:00, run_after=2026-08-13 00:00:00+00:00
+[2026-08-13T06:02:11.805+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.643 seconds
+[2026-08-13T06:02:42.203+0000] {processor.py:161} INFO - Started process (PID=174) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:02:42.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:02:42.213+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:02:42.213+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:02:42.392+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:02:43.632+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:02:43.632+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:02:43.709+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:02:43.708+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-12 00:00:00+00:00, run_after=2026-08-13 00:00:00+00:00
+[2026-08-13T06:02:43.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 1.594 seconds
+[2026-08-13T06:03:14.047+0000] {processor.py:161} INFO - Started process (PID=179) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:03:14.051+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:03:14.058+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:03:14.057+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:03:14.111+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:03:14.221+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:03:14.220+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:03:14.277+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:03:14.277+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-12 00:00:00+00:00, run_after=2026-08-13 00:00:00+00:00
+[2026-08-13T06:03:14.312+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.275 seconds
+[2026-08-13T06:03:44.554+0000] {processor.py:161} INFO - Started process (PID=184) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:03:44.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:03:44.565+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:03:44.564+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:03:44.680+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:03:44.809+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:03:44.808+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:03:44.989+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:03:44.989+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-12 00:00:00+00:00, run_after=2026-08-13 00:00:00+00:00
+[2026-08-13T06:03:45.076+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.572 seconds
+[2026-08-13T06:04:15.571+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:04:15.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:04:15.606+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:04:15.603+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:04:15.735+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:04:15.972+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:04:15.972+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:04:16.097+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:04:16.096+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-12 00:00:00+00:00, run_after=2026-08-13 00:00:00+00:00
+[2026-08-13T06:04:16.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.644 seconds
+[2026-08-13T06:04:46.620+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:04:46.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:04:46.652+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:04:46.649+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:04:46.769+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:04:46.925+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:04:46.924+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:04:46.970+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:04:46.969+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-12 00:00:00+00:00, run_after=2026-08-13 00:00:00+00:00
+[2026-08-13T06:04:47.029+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.497 seconds
+[2026-08-13T06:05:17.468+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:05:17.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:05:17.483+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:05:17.482+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:05:17.687+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:05:17.850+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:05:17.850+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:05:17.899+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:05:17.899+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-12 00:00:00+00:00, run_after=2026-08-13 00:00:00+00:00
+[2026-08-13T06:05:17.938+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.499 seconds
+[2026-08-13T06:05:48.213+0000] {processor.py:161} INFO - Started process (PID=204) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:05:48.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:05:48.231+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:05:48.228+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:05:48.354+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:05:48.506+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:05:48.505+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:05:48.628+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:05:48.628+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-12 00:00:00+00:00, run_after=2026-08-13 00:00:00+00:00
+[2026-08-13T06:05:48.706+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.523 seconds
+[2026-08-13T06:06:19.165+0000] {processor.py:161} INFO - Started process (PID=209) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:06:19.174+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:06:19.184+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:06:19.184+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:06:19.266+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:06:19.443+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:06:19.443+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:06:19.558+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:06:19.558+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-12 00:00:00+00:00, run_after=2026-08-13 00:00:00+00:00
+[2026-08-13T06:06:19.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.516 seconds
+[2026-08-13T06:06:49.881+0000] {processor.py:161} INFO - Started process (PID=216) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:06:49.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:06:49.888+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:06:49.887+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:06:49.941+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:06:49.988+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:06:49.987+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:06:50.026+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:06:50.026+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-13 00:00:00+00:00, run_after=2026-08-14 00:00:00+00:00
+[2026-08-13T06:06:50.064+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.193 seconds
+[2026-08-13T06:07:20.425+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:07:20.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:07:20.433+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:07:20.433+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:07:20.513+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:07:20.628+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:07:20.628+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:07:20.672+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:07:20.672+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-13 00:00:00+00:00, run_after=2026-08-14 00:00:00+00:00
+[2026-08-13T06:07:20.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.317 seconds
+[2026-08-13T06:07:51.148+0000] {processor.py:161} INFO - Started process (PID=228) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:07:51.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:07:51.157+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:07:51.156+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:07:51.235+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:07:51.314+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:07:51.313+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:07:51.362+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:07:51.361+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-13 00:00:00+00:00, run_after=2026-08-14 00:00:00+00:00
+[2026-08-13T06:07:51.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.270 seconds
+[2026-08-13T06:08:21.768+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:08:21.772+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:08:21.785+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:08:21.784+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:08:21.934+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:08:22.061+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:08:22.060+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:08:22.171+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:08:22.171+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-13 00:00:00+00:00, run_after=2026-08-14 00:00:00+00:00
+[2026-08-13T06:08:22.240+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.481 seconds
+[2026-08-13T06:08:52.629+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:08:52.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:08:52.639+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:08:52.638+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:08:52.713+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:08:52.784+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:08:52.784+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:08:52.874+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:08:52.873+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-13 00:00:00+00:00, run_after=2026-08-14 00:00:00+00:00
+[2026-08-13T06:08:52.929+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.310 seconds
+[2026-08-13T06:09:23.312+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:09:23.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/mock_data_pipeline.py for tasks to queue
+[2026-08-13T06:09:23.319+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:09:23.319+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:09:23.372+0000] {processor.py:840} INFO - DAG(s) 'cognistream_data_ingestion' retrieved from /opt/airflow/dags/mock_data_pipeline.py
+[2026-08-13T06:09:23.420+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:09:23.420+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-13T06:09:23.459+0000] {logging_mixin.py:188} INFO - [2026-08-13T06:09:23.458+0000] {dag.py:3947} INFO - Setting next_dagrun for cognistream_data_ingestion to 2026-08-13 00:00:00+00:00, run_after=2026-08-14 00:00:00+00:00
+[2026-08-13T06:09:23.491+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/mock_data_pipeline.py took 0.191 seconds
