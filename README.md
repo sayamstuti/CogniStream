@@ -47,4 +47,4 @@ CogniStream/
 
 Orchestration Audit -- Airflow DAG runs successfully, confirmed via the
 Airflow UI (Grid view shows successful runs for `generate_mock_events`).
-![Airflow DAG success](docs/screenshots/airflow-success.jpg)
+![Airflow DAG success](docs/screenshots/airflow_success.jpg)
