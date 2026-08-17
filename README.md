@@ -31,12 +31,15 @@ Mock APIs → Apache Airflow → ClickHouse → Polars Flow-State Logic → Fast
 ## Project Structure
 
 CogniStream/
-├── dags/mock_data_pipeline.py
-├── data_ingestion/generate_mock_data.py
+├── dags/
+│   └── mock_data_pipeline.py
+├── data_ingestion/
+│   └── generate_mock_data.py
 ├── data_processing/
 │   ├── load_to_clickhouse.py
 │   └── validate_pipeline.py
-├── docs/screenshots/
+├── docs/
+│   └── screenshots/
 ├── docker-compose.yaml
 └── requirements.txt
 
