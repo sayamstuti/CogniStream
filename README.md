@@ -1,62 +1,77 @@
 # CogniStream — Developer Flow-State & Cognitive Load Analytics
-Measures developer flow-state and "Context-Switching Tax" using activity logs (GitHub, Slack, Jira, VSCode) instead of shallow metrics like lines-of-code or tickets closed.
 
+CogniStream analyzes developer activity across GitHub, Slack, Jira, and VSCode to measure developer flow-state, cognitive load, and the "Context-Switching Tax" instead of relying on shallow metrics like lines of code or tickets closed.
 
-## My Contributions-
+## Problem Statement
 
+Traditional engineering productivity metrics focus on output but ignore interruptions and friction during development. Frequent notifications, CI/CD alerts, and task switching can reduce deep, focused work.
+
+CogniStream identifies these patterns and provides data-driven insights to help Engineering Managers understand and improve developer productivity and experience.
+
+## Use Case
+
+Instead of simply seeing how many commits Team A made, an Engineering Manager can identify that frequent CI/CD Slack alerts are interrupting IDE sessions and causing significant context switching. This helps managers improve notification policies, reduce unnecessary interruptions, and protect developers' deep-work time.
+
+## My Contributions
+
+- Generated mock GitHub, Slack, Jira, and VSCode activity data for a 5-day work week.
+- Built and deployed the Apache Airflow data pipeline.
+- Set up ClickHouse for event storage.
+- Developed Polars-based ETL for loading event data.
+- Implemented automated data-quality validation checks.
 
 ## Tech Stack
-Apache Airflow · ClickHouse · Python (Polars) · Docker · FastAPI (planned) · React + Tremor.js (planned)
+
+Python (Polars) · Apache Airflow · ClickHouse · Docker · FastAPI (planned) · React + Tremor.js (planned)
 
 ## Architecture
-Mock APIs → Airflow (daily schedule) → ClickHouse (storage) → Polars (flow-state logic) → FastAPI → React Dashboard
+
+Mock APIs → Apache Airflow → ClickHouse → Polars Flow-State Logic → FastAPI → React Dashboard
 
 ## Project Structure
+
 CogniStream/
-├── dags/mock_data_pipeline.py           # Airflow DAG
-├── data_ingestion/generate_mock_data.py # Mock event generator
+├── dags/mock_data_pipeline.py
+├── data_ingestion/generate_mock_data.py
 ├── data_processing/
-│   ├── load_to_clickhouse.py            # ETL: JSON → ClickHouse
-│   └── validate_pipeline.py             # Data quality checks
+│   ├── load_to_clickhouse.py
+│   └── validate_pipeline.py
 ├── docs/screenshots/
-├── docker-compose.yaml                  # Airflow + Postgres + ClickHouse
+├── docker-compose.yaml
 └── requirements.txt
 
-## How to Run
-docker-compose up airflow-init      # one-time setup
-docker-compose up -d                # start all services
-docker ps                           # confirm containers running
+## Progress
 
-Airflow dashboard: http://localhost:8080 (admin/admin)
-
-cd data_processing
-python load_to_clickhouse.py        # load data into ClickHouse
-python validate_pipeline.py         # run data quality checks
-
-## Progress Log
-- Day 1-2: Mock data generators for GitHub/Slack/Jira/VSCode, extended to a 5-day work week
-- Day 3-4: Airflow DAG built and deployed via Docker; verified successful scheduled runs
-- Day 5-6: ClickHouse deployed; dev_events schema created; 261 events loaded via Polars ETL
-- Day 7-8: Automated pipeline validation (6 data quality checks, all passing); mid-review docs
+- Day 1–2: Mock data generators for GitHub, Slack, Jira, and VSCode.
+- Day 3–4: Airflow DAG developed and verified through Docker.
+- Day 5–6: ClickHouse deployed and 261 events loaded through Polars ETL.
+- Day 7–8: Automated pipeline validation implemented with 6 passing data-quality checks.
 
 ## Mid-Review Proof
 
 Airflow DAG running successfully:
+
 ![Airflow success](docs/screenshots/airflow_success.jpg)
 
-Pipeline validation — all checks passing:
+Pipeline validation:
+
 ![Validation checks](docs/screenshots/validate_pipeline.png)
 
-Full stack running (Airflow + Postgres + ClickHouse):
-![Docker containers](docs/screenshots/docker_containers.png)
+Full stack running:
+
+![Docker containers](docs/screenshots/containers.png)
 
 ## Next Steps
-Flow-state detection algorithm → Context-Switching Tax metric → FastAPI → React dashboard
+
+- Flow-state detection algorithm
+- Context-Switching Tax metric
+- FastAPI backend
+- React analytics dashboard
 
 ## Author
 
 **Sayam Stuti Shuvadarsini**
 
-- LinkedIn: [www.linkedin.com/in/sayam-stuti-shuvadarsini](https://www.linkedin.com/in/sayam-stuti-shuvadarsini)
-- GitHub: [github.com/sayamstuti](https://github.com/sayamstuti)
-- Email: sayamstuti594@gmail.com
+LinkedIn: https://www.linkedin.com/in/sayam-stuti-shuvadarsini  
+GitHub: https://github.com/sayamstuti  
+Email: sayamstuti594@gmail.com
