@@ -19,6 +19,9 @@ Instead of simply seeing how many commits Team A made, an Engineering Manager ca
 - Set up ClickHouse for event storage.
 - Developed Polars-based ETL for loading event data.
 - Implemented automated data-quality validation checks.
+- Implemented automated data-quality validation checks.
+- Built the flow-state detection algorithm using Polars.
+- Developed the Context-Switching Tax metric to quantify interruption impact.
 
 ## Tech Stack
 
@@ -38,7 +41,9 @@ CogniStream/
 │   └── generate_mock_data.py
 ├── data_processing/
 │   ├── load_to_clickhouse.py
-│   └── validate_pipeline.py
+│   ├── validate_pipeline.py
+│   ├── flow_state_detection.py
+│   └── context_switching_tax.py
 ├── docs/
 │   └── screenshots/
 ├── docker-compose.yaml
@@ -51,8 +56,9 @@ CogniStream/
 - Day 3–4: Airflow DAG developed and verified through Docker.
 - Day 5–6: ClickHouse deployed and 261 events loaded through Polars ETL.
 - Day 7–8: Automated pipeline validation implemented with 6 passing data-quality checks.
+- Day 9–10: Built the flow-state detection algorithm and Context-Switching Tax metric — core analytics logic complete.
 
-## Mid-Review Proof
+## Proof of Work
 
 Airflow DAG running successfully:
 
@@ -66,10 +72,10 @@ Full stack running:
 
 ![Docker containers](docs/screenshots/containers.png)
 
+Context-Switching Tax — flow-state analysis output:
+![Context-switching tax results](docs/screenshots/context_switching_tax.png)
 ## Next Steps
 
-- Flow-state detection algorithm
-- Context-Switching Tax metric
 - FastAPI backend
 - React analytics dashboard
 
