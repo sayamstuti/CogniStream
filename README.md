@@ -23,6 +23,8 @@ Instead of simply seeing how many commits Team A made, an Engineering Manager ca
 - Built the flow-state detection algorithm using Polars.
 - Developed the Context-Switching Tax metric to quantify interruption impact.
 - Aggregated per-developer metrics into a ClickHouse summary table for the API layer.
+- Built a FastAPI backend to serve developer metrics as JSON endpoints.
+
 
 ## Tech Stack
 
@@ -46,6 +48,8 @@ CogniStream/
 │   ├── flow_state_detection.py
 │   ├── context_switching_tax.py
 │   └── aggregate_metrics.py
+├── api/
+│   └── main.py
 ├── docs/
 │   └── screenshots/
 ├── docker-compose.yaml
@@ -59,6 +63,7 @@ CogniStream/
 - Day 5–6: ClickHouse deployed and 261 events loaded through Polars ETL.
 - Day 7–8: Automated pipeline validation implemented with 6 passing data-quality checks.
 - Day 9–11: Built the flow-state detection algorithm, Context-Switching Tax metric, and aggregated per-developer summary table — core analytics logic complete.
+- Day 12: Built the FastAPI backend serving developer metrics as JSON, with auto-generated interactive docs.
 ## Proof of Work
 
 Airflow DAG running successfully:
@@ -78,10 +83,13 @@ Context-Switching Tax — flow-state analysis output:
 
 Aggregated flow-state & context-switching metrics per developer:
 ![Aggregated metrics summary](docs/screenshots/aggregated_metrics.png)
+
+FastAPI serving live developer metrics as JSON:
+![FastAPI metrics endpoint](docs/screenshots/fastapi_metrics.png)
 ## Next Steps
 
-- FastAPI backend
-- React analytics dashboard
+- React + Tremor.js analytics dashboard
+- Connect frontend to FastAPI endpoints
 
 ## Author
 

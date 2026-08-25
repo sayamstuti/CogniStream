@@ -1,2 +1,4 @@
 ﻿polars
 clickhouse-connect
+fastapi
+uvicorn
