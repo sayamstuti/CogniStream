@@ -64,6 +64,7 @@ CogniStream/
 - Day 7–8: Automated pipeline validation implemented with 6 passing data-quality checks.
 - Day 9–11: Built the flow-state detection algorithm, Context-Switching Tax metric, and aggregated per-developer summary table — core analytics logic complete.
 - Day 12: Built the FastAPI backend serving developer metrics as JSON, with auto-generated interactive docs.
+- Day 13 :Initialized the React frontend using Vite, installed and configured Tailwind CSS + Tremor.js for the dashboard UI, resolved a Tremor/Tailwind config compatibility issue, and verified the app runs successfully on localhost.
 ## Proof of Work
 
 Airflow DAG running successfully:
@@ -86,6 +87,9 @@ Aggregated flow-state & context-switching metrics per developer:
 
 FastAPI serving live developer metrics as JSON:
 ![FastAPI metrics endpoint](docs/screenshots/fastapi_metrics.png)
+
+React + Tremor.js dashboard initialized:
+![React app running](docs/screenshots/react_setup.png)
 ## Next Steps
 
 - React + Tremor.js analytics dashboard
