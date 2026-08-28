@@ -24,12 +24,11 @@ Instead of simply seeing how many commits Team A made, an Engineering Manager ca
 - Developed the Context-Switching Tax metric to quantify interruption impact.
 - Aggregated per-developer metrics into a ClickHouse summary table for the API layer.
 - Built a FastAPI backend to serve developer metrics as JSON endpoints.
-
+- Built a React + Tremor.js dashboard connected to the live API, displaying per-developer flow-state and interruption metrics.
 
 ## Tech Stack
 
-Python (Polars) · Apache Airflow · ClickHouse · Docker · FastAPI (planned) · React + Tremor.js (planned)
-
+Python (Polars) · Apache Airflow · ClickHouse · Docker · FastAPI · React + Tremor.js
 ## Architecture
 
 Mock APIs → Apache Airflow → ClickHouse → Polars Flow-State Logic → FastAPI → React Dashboard
@@ -50,6 +49,8 @@ CogniStream/
 │   └── aggregate_metrics.py
 ├── api/
 │   └── main.py
+├── dashboard/
+│   └── src/App.jsx
 ├── docs/
 │   └── screenshots/
 ├── docker-compose.yaml
@@ -65,6 +66,8 @@ CogniStream/
 - Day 9–11: Built the flow-state detection algorithm, Context-Switching Tax metric, and aggregated per-developer summary table — core analytics logic complete.
 - Day 12: Built the FastAPI backend serving developer metrics as JSON, with auto-generated interactive docs.
 - Day 13 :Initialized the React frontend using Vite, installed and configured Tailwind CSS + Tremor.js for the dashboard UI, resolved a Tremor/Tailwind config compatibility issue, and verified the app runs successfully on localhost.
+- Day 14: Connected the React dashboard to the FastAPI backend — live metric cards now display real flow-time and CI/CD tax data per developer.
+
 ## Proof of Work
 
 Airflow DAG running successfully:
@@ -88,12 +91,14 @@ Aggregated flow-state & context-switching metrics per developer:
 FastAPI serving live developer metrics as JSON:
 ![FastAPI metrics endpoint](docs/screenshots/fastapi_metrics.png)
 
-React + Tremor.js dashboard initialized:
-![React app running](docs/screenshots/react_setup.png)
+React dashboard displaying live developer metrics:
+![React dashboard with live data](docs/screenshots/dashboard_metrics.png)
+
 ## Next Steps
 
-- React + Tremor.js analytics dashboard
-- Connect frontend to FastAPI endpoints
+- Build Context-Switching Tax comparison chart
+- Add loading/error states and UI polish
+- Add per-developer drill-down view
 
 ## Author
 
